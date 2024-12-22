@@ -32,6 +32,7 @@ console.log(newAge(25));
 console.log(newAge(15));
 
 
+
 function newCheckOrder(available, ordered) {
     if (available < ordered) {
         return 'Your order is too large, we don’t have enough goods.';
