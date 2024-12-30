@@ -19,6 +19,7 @@ console.log('Кількість негативних чисел:', negativeCount
 console.log('Кількість нульових чисел:', zeroCount);
 
 
+
 const numbers_1 = [1, 2, 3, 4, 5]
 
 function doubleNumberByIndex(nums){
