@@ -86,7 +86,6 @@
 // const newEBook_2 = new EBook('Travels of Gulliver', 'Jonathan Swift', 1726, '.docs');
 // const newEBook_3 = new EBook('TEST', 'TEST', 23443, '.txt');
 
-
 // try {
 //     newEBook_1.PrintInfoEBook();
 
@@ -137,7 +136,6 @@
 //     console.error(error.message);
 // }
 
-
 // class Book {
 //         constructor(name_of_book, author, year_of_book) {
 //             this.name_of_book = name_of_book;
@@ -155,7 +153,6 @@
 //             return oldest;
 //         }
 // }
-
 
 // class EBook extends Book {
 //     constructor(name_of_book, author, year_of_book, format_of_book) {
@@ -182,27 +179,26 @@
 
 // console.log(newOldestBook)
 
-
 class Book {
-        constructor(name_of_book, author, year_of_book) {
-            this.name_of_book = name_of_book;
-            this.author = author;
-            this.year_of_book = year_of_book;
-        }
+	constructor(name_of_book, author, year_of_book) {
+		this.name_of_book = name_of_book;
+		this.author = author;
+		this.year_of_book = year_of_book;
+	}
 }
 
 class EBook extends Book {
-    constructor(name_of_book, author, year_of_book, format_of_book) {
-        super(name_of_book, author, year_of_book);
-        this.format_of_book = format_of_book;
-    }
+	constructor(name_of_book, author, year_of_book, format_of_book) {
+		super(name_of_book, author, year_of_book);
+		this.format_of_book = format_of_book;
+	}
 
-    static newBook_from_Book(book, format_of_book){
-        return new EBook(book.name_of_book, book.author, book.year_of_book, format_of_book);
-    }
+	static newBook_from_Book(book, format_of_book) {
+		return new EBook(book.name_of_book, book.author, book.year_of_book, format_of_book);
+	}
 }
 
 const newBook = new Book('Dynamic Human Anatomy', 'Monacelli Press', 2022, '.docs');
 const newEBook = EBook.newBook_from_Book(newBook, '.pdf');
 
-console.log(newEBook)
+console.log(newEBook);
