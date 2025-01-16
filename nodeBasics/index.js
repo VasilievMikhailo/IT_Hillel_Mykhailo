@@ -1,11 +1,14 @@
 import chalk from 'chalk';
 
 console.log(chalk.blue('Lesson_3'));
-console.log(chalk.bgMagentaBright.bold('D') + chalk.white('O') + chalk.rgb(10, 120, 250).underline('N') + chalk.bgGreen.italic('E'))
+console.log(
+	chalk.bgMagentaBright.bold('D') +
+		chalk.white('O') +
+		chalk.rgb(10, 120, 250).underline('N') +
+		chalk.bgGreen.italic('E'),
+);
 
-console.log('TEST')
-
-
+console.log('TEST');
 
 // const test = 'test';
 // const number = 10
