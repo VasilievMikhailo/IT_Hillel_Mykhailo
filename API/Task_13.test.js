@@ -31,6 +31,7 @@ describe('API Tests for GET', () => {
     expect(post).toHaveProperty('body');
   });
 
+  
   test('GET comments for post 1', async () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1/comments');
   
