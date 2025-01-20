@@ -43,6 +43,7 @@ describe('API Tests for GET', () => {
   });
 });
 
+
 describe('API Tests for POST', () => {
   test('POST new Post', async () => {
     const newPost = {
